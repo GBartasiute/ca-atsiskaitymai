@@ -1,11 +1,14 @@
-* {
-    box-sizing: border-box;;
-  }
 
-  body {
-    margin: 0;
-    padding: 0;
-  }
+* {
+  box-sizing: border-box;;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.signup {color: pink;}
   
   a {
     text-decoration: none;
@@ -21,6 +24,98 @@
     position: fixed;
   }
 
+
+  #header > a {
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+  }
+  
+  #header a {
+    padding: 0 1.5em;
+  }
+  
+  #header nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  
+  #banner {
+  
+    display: flex;
+    height: vh;
+    min-height: 30em;
+    max-height: 50em;
+    padding: 6em 0 2em 0;
+    top: -3.25em;
+  }
+  
+  .tiles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tiles article {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    width: 40%;
+  }
+  
+  .tiles article:nth-child(4n - 1),
+  .tiles article:nth-child(4n - 2) {
+    width: 60%;
+  }
+  
+  .tiles article:nth-child(6n - 5) {
+    background-color: #6fc3df;
+  }
+  
+  .tiles article:nth-child(6n - 4) {
+    background-color: #8d82c4;
+  }
+  
+  .tiles article:nth-child(6n - 3) {
+    background-color: #ec8d81;
+  }
+  
+  .tiles article:nth-child(6n - 2) {
+    background-color: #e7b788;
+  }
+  
+  .tiles article:nth-child(6n - 1) {
+    background-color: #8ea9e8;
+  }
+  
+  .tiles article:nth-child(6n) {
+    background-color: #87c5a4;
+  }
+  
+  #contact {
+    display: flex;
+  }
+  
+  #contact > section:nth-child(2n - 1) {
+    width: 60%;
+  }
+  
+  #contact > section:nth-child(2n) {
+    width: 40%;
+  }
+  
+  #menu > a {
+    display: none;
+  }
+  
+  #menu .links {
+    list-style: none;
+    display: flex;
+  }
+  
+  footer ul {
+    margin: 0;
+  }
+  
   #meniu .links {list-style: none;
   display: flex}
 
