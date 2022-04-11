@@ -1,6 +1,6 @@
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box ;
 }
 
 body {
@@ -45,8 +45,8 @@ body {
   #banner {
    
     padding: 40px;
-    border: 3px solid white
-  ;}
+    border: 3px solid white;
+  }
 
  .float {
     width: 50%;
@@ -68,36 +68,55 @@ body {
 
    
   .tiles {
-    background-color: blueviolet;
-    align-items: center;
+    background:
+        linear-gradient(red, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
     height: 30vh;
     width: 70%;
-    padding: 20px;
     border: 2px solid white;
+    color: black;
+    padding:  30px;
+    font-size: 30px;
+    border-radius: 15px;
     }
 
-    .freenft{ font-size: larger;}
+.today {display: block;}
+
+.freenft{ font-size: larger;}
   
-  .soon {color: pink;
+.soon {color: pink;
   text-transform: uppercase;}
 
+.img2 {
+  height: 80px;
   
-  .tiles {
-    display: flex;
-    flex-wrap: wrap;
-  }
- 
-  
+  min-width:auto;
+  font-size: 0;
+  line-height: 0;
+  align-self: auto;
+}
+
+#img3 { justify-content: space-evenly;
+display: inline-block;}
+
+.img4 { height: 400px;}
+
+#two
+{height:100px;
+}
+
   #contact {
     display: flex;
   }
   
   
- 
   #contact > section:nth-child(2n - 1) {
     width: 60%;
   }
   
+ 
   #menu > a {
     display: none;
   }
@@ -106,10 +125,15 @@ body {
     list-style: none;
     display: flex;
   }
-  
-  footer ul {
+
+
+
+.column:first-child {
     margin: 0;
-  }
+}
+  
+  footer 
+  {margin: 0;}
   
   #meniu .links {list-style: none;
   display: flex}
