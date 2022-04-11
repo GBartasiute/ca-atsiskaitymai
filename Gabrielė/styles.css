@@ -1,12 +1,18 @@
 
 * {
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
+    margin-left:1%;
+    margin-right:1%;
+    margin-bottom:1%;
+    margin-top:1%;
 }
+
+.img {float: right; margin-right: 400px;}
 
 .signup {color: pink;}
   
@@ -17,7 +23,7 @@ body {
   #header {
     display: flex;
     height: 3.25em;
-    width: 100%;
+    width: 1300px;
     justify-content: space-between;
     background: white;
     color: black;
@@ -25,10 +31,6 @@ body {
   }
 
 
-  #header > a {
-    margin-block-end: 1em;
-    margin-block-start: 1em;
-  }
   
   #header a {
     padding: 0 1.5em;
@@ -41,66 +43,59 @@ body {
   }
   
   #banner {
-  
-    display: flex;
-    height: vh;
-    min-height: 30em;
-    max-height: 50em;
-    padding: 6em 0 2em 0;
-    top: -3.25em;
+   
+    padding: 40px;
+    border: 3px solid white
+  ;}
+
+ .float {
+    width: 50%;
+    float: :left;
+    padding: 20px;
+    border: 2px solid white;
   }
+
+  .button {background-color: white;
+  border: 2px solid purple;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration:;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  }
+
+   
+  .tiles {
+    background-color: blueviolet;
+    align-items: center;
+    height: 30vh;
+    width: 70%;
+    padding: 20px;
+    border: 2px solid white;
+    }
+
+    .freenft{ font-size: larger;}
+  
+  .soon {color: pink;
+  text-transform: uppercase;}
+
   
   .tiles {
     display: flex;
     flex-wrap: wrap;
   }
-  
-  .tiles article {
-    display: flex;
-    align-items: center;
-    height: 40vh;
-    width: 40%;
-  }
-  
-  .tiles article:nth-child(4n - 1),
-  .tiles article:nth-child(4n - 2) {
-    width: 60%;
-  }
-  
-  .tiles article:nth-child(6n - 5) {
-    background-color: #6fc3df;
-  }
-  
-  .tiles article:nth-child(6n - 4) {
-    background-color: #8d82c4;
-  }
-  
-  .tiles article:nth-child(6n - 3) {
-    background-color: #ec8d81;
-  }
-  
-  .tiles article:nth-child(6n - 2) {
-    background-color: #e7b788;
-  }
-  
-  .tiles article:nth-child(6n - 1) {
-    background-color: #8ea9e8;
-  }
-  
-  .tiles article:nth-child(6n) {
-    background-color: #87c5a4;
-  }
+ 
   
   #contact {
     display: flex;
   }
   
+  
+ 
   #contact > section:nth-child(2n - 1) {
     width: 60%;
-  }
-  
-  #contact > section:nth-child(2n) {
-    width: 40%;
   }
   
   #menu > a {
